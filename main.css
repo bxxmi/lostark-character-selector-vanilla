@@ -1,0 +1,80 @@
+body {
+  height: 100vh;
+  background-image: url("images/background-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container { 
+  padding: 50px 0;
+}
+
+.container .characters {
+  max-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.container .characters .character {
+  width: 80px;
+  height: 84px;
+  margin: 4px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transform: skewX(-14deg);
+  transition: 
+     transform .2s,
+     background-color .6s;
+  background-color: #555;
+  overflow: hidden;
+}
+
+.container .characters .character:hover {
+  transform: skewX(-14deg) scale(1.3);
+  z-index: 1;
+}
+
+.container .characters .character .image {
+  width: 140%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90px;
+  transform: skewX(14deg) translateX(-16px);
+}
+
+/* SCSS로 변환 가능 */
+.container .characters .character:nth-child(1) .image { background-image: url("images/character1.png"); }
+.container .characters .character:nth-child(2) .image { background-image: url("images/character2.png"); }
+.container .characters .character:nth-child(3) .image { background-image: url("images/character3.png"); }
+.container .characters .character:nth-child(4) .image { background-image: url("images/character4.png"); }
+.container .characters .character:nth-child(5) .image { background-image: url("images/character5.png"); }
+.container .characters .character:nth-child(6) .image { background-image: url("images/character6.png"); }
+.container .characters .character:nth-child(7) .image { background-image: url("images/character7.png"); }
+.container .characters .character:nth-child(8) .image { background-image: url("images/character8.png"); }
+.container .characters .character:nth-child(9) .image { background-image: url("images/character9.png"); }
+.container .characters .character:nth-child(10) .image { background-image: url("images/character10.png"); }
+.container .characters .character:nth-child(11) .image { background-image: url("images/character11.png"); }
+.container .characters .character:nth-child(12) .image { background-image: url("images/character12.png"); }
+.container .characters .character:nth-child(13) .image { background-image: url("images/character13.png"); }
+.container .characters .character:nth-child(14) .image { background-image: url("images/character14.png"); }
+.container .characters .character:nth-child(15) .image { background-image: url("images/character15.png"); }
+.container .characters .character:nth-child(16) .image { background-image: url("images/character16.png"); }
+.container .characters .character:nth-child(17) .image { background-image: url("images/character17.png"); }
+.container .characters .character:nth-child(18) .image { background-image: url("images/character18.png"); }
+.container .characters .character:nth-child(19) .image { background-image: url("images/character19.png"); }
+.container .characters .character:nth-child(20) .image { background-image: url("images/character20.png"); }
+
+.container .logo {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container .logo img {
+  width: 100%;
+}
